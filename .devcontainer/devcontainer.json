@@ -1,0 +1,55 @@
+{
+  // コンテナ名
+  "name": "Existing Docker Compose (Extend)",
+  // docker-compose.ymlのファイルパス
+  "dockerComposeFile": ["../docker-compose.yaml"],
+  // 起動するサービス名
+  "service": "front",
+  // コンテナ内でのユーザー
+  "remoteUser": "node",
+  // VSCodeで開くコンテナ内のパス
+  "workspaceFolder": "/app",
+  "settings": {
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "stylelint.validate": ["css", "scss"],
+    "scss.validate": false,
+    "css.validate": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    // sticky scrollの設定
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 5,
+    "workbench.colorCustomizations": {
+      "editorStickyScroll.background": "#00708D",
+      "editorStickyScrollHover.background": "#59A2B5"
+    },
+    // typescript で絶対パスで import する設定
+    "typescript.preferences.importModuleSpecifier": "non-relative"
+  },
+  // コンテナ内で使用する拡張機能のID
+  "extensions": [
+    "ms-vscode.live-server",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "Syler.sass-indented",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "burkeholland.simple-react-snippets",
+    "formulahendry.auto-rename-tag",
+    "MariusAlchimavicius.json-to-ts",
+    "dsznajder.es7-react-js-snippets",
+    "styled-components.vscode-styled-components",
+    "Gruntfuggly.todo-tree",
+    "42Crunch.vscode-openapi",
+    "mhutchie.git-graph"
+  ],
+  // "forwardPorts": [],
+  "runServices": ["front"],
+  "shutdownAction": "none"
+}
