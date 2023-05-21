@@ -35,9 +35,7 @@
     "ms-vscode.live-server",
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
-    "Syler.sass-indented",
     "esbenp.prettier-vscode",
-    "ms-python.python",
     "streetsidesoftware.code-spell-checker",
     "naumovs.color-highlight",
     "burkeholland.simple-react-snippets",
@@ -45,8 +43,6 @@
     "MariusAlchimavicius.json-to-ts",
     "dsznajder.es7-react-js-snippets",
     "styled-components.vscode-styled-components",
-    "Gruntfuggly.todo-tree",
-    "42Crunch.vscode-openapi",
     "mhutchie.git-graph"
   ],
   // "forwardPorts": [],
